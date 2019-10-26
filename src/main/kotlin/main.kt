@@ -1,9 +1,9 @@
-import Classes.DAO
-import Classes.User
+import classes.DAO
+import classes.User
 import io.javalin.Javalin
 import io.javalin.apibuilder.ApiBuilder.*
 
-fun main(args: Array<String>) {
+fun main() {
     val userDao = DAO()
 
     val app = Javalin.create().apply {
